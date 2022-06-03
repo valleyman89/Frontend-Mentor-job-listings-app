@@ -1,10 +1,10 @@
-import React, { useState } from "react";
+import React from "react";
 
 const Badge = ({ featured, fresh }) => {
   return (
     <>
-      <span className="badge featured">{featured ? "(featured)" : ""}</span>
-      <span className="baged new">{fresh ? "(new)" : ""}</span>
+      {fresh ? <span className="badge fresh">new!</span> : null}
+      {featured ? <span className="badge featured">featured</span> : null}
     </>
   );
 };
