@@ -1,17 +1,29 @@
-import React, { useContext } from "react";
-import { ListingContext } from "../App";
+import React from "react";
 import Listing from "./Listing";
+import Data from "../services/data.json";
+import { useFilterContext } from "../context/FilterContext";
 
 const Listings = () => {
-  const listings = useContext(ListingContext);
+  const listings = Data;
+  const { filter } = useFilterContext();
+
   return (
-    <div>
-      <ul>
-        {listings.map((listing, i) => (
-          <Listing key={listing.id} data={listing} />
+    <>
+      {listings
+        .filter((listingSkill) => {
+          const newArray = [
+            ...listingSkill.tools,
+            ...listingSkill.languages,
+            listingSkill.level,
+            listingSkill.role,
+          ];
+
+          return !newArray.every((result, i) => result !== filter[i]);
+        })
+        .map((filteredListing) => (
+          <Listing key={filteredListing.id} data={filteredListing} />
         ))}
-      </ul>
-    </div>
+    </>
   );
 };
 
