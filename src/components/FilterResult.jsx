@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React from "react";
 import { useFilterContext } from "../context/FilterContext";
 
 const FilterResult = () => {
@@ -17,7 +17,11 @@ const FilterResult = () => {
                 onClick={() => deleteFilterItem(skillName)}
                 className="close"
               >
-                <img aria-label="remove" src="../images/icon-remove.svg" />
+                <img
+                  aria-label="remove"
+                  src="../images/icon-remove.svg"
+                  alt={"remove " + skillName}
+                />
               </button>
             </div>
           </div>

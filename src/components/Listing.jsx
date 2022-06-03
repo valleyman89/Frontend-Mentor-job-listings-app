@@ -6,7 +6,7 @@ const Listing = ({ data }) => {
   return (
     <div className="listing shadow">
       <div className="logo">
-        <img src={data.logo} />
+        <img src={data.logo} alt={data.company + " logo"} />
       </div>
       <div className="name">
         {data.company} <Badge fresh={data.new} featured={data.featured} />
