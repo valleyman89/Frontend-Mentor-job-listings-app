@@ -1,21 +1,16 @@
-import "./App.css";
-import React, { useState } from "react";
-import Data from "./services/data.json";
+import React from "react";
 import Listings from "./components/Listings";
-import Filter from "./components/Filter";
-
-export const ListingContext = React.createContext();
+import FilterResult from "./components/FilterResult";
+import { useFilterContext } from "./context/FilterContext";
 
 function App() {
-  const [data, setData] = useState(Data);
+  const { filter } = useFilterContext();
 
   return (
-    <ListingContext.Provider value={data}>
-      <main>
-        <Filter />
-        <Listings />
-      </main>
-    </ListingContext.Provider>
+    <main>
+      {filter.length > 0 ? <FilterResult /> : null}
+      <Listings />
+    </main>
   );
 }
 
