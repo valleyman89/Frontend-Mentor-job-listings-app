@@ -27,8 +27,8 @@ const FilterResult = () => {
           </div>
         );
       })}
-      <button className="clear pointer" onClick={() => setFilter([])}>
-        clear
+      <button className="clear" onClick={() => setFilter([])}>
+        <span className="pointer">clear</span>
       </button>
     </div>
   );
