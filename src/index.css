@@ -20,13 +20,13 @@ html {
 }
 
 body {
-  font-family: "League Spartan", sans-serif;
-  font-weight: 500;
   background-color: var(--color-light-grey-cyan);
-  font-size: 1.5rem;
   background-image: url(../public/images/bg-header-mobile.svg);
   background-repeat: repeat-x;
   background-size: auto;
+  font-family: "League Spartan", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 500;
 }
 
 @media screen and (min-width: 1000px) {
@@ -62,19 +62,19 @@ main {
 .filter {
   background-color: white;
   border-radius: 5px;
-  margin-top: 5rem;
-  padding: 1rem;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
+  margin-top: 5rem;
+  padding: 1rem;
 }
 
 .clear {
   all: unset;
   color: var(--color-dark-grey-cyan);
-  text-transform: capitalize;
   margin-right: 2rem;
+  text-transform: capitalize;
 }
 
 .clear:hover {
@@ -104,11 +104,11 @@ main {
 }
 
 .kill-skill {
-  grid-area: 1 / 2 / 2 / 3;
-  padding: 0.93rem;
   background-color: var(--color-primary);
   border-bottom-right-radius: 5px;
   border-top-right-radius: 5px;
+  grid-area: 1 / 2 / 2 / 3;
+  padding: 0.93rem;
 }
 
 .kill-skill:hover {
@@ -121,14 +121,14 @@ main {
 
 /* Listings */
 .listing {
+  background-color: white;
+  border-radius: 5px;
   display: flex;
   flex-direction: column;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(4, 5rem);
-  border-radius: 5px;
   margin: 3.5rem 0;
   padding: 2.5rem;
-  background-color: white;
 }
 
 @media screen and (min-width: 1000px) {
@@ -204,8 +204,6 @@ main {
   }
   .details {
     margin-left: 4rem;
-  }
-  .skills {
   }
 }
 
