@@ -3,7 +3,7 @@ import React, { useState, createContext } from "react";
 export const FilterContext = createContext();
 
 export const FilterProvider = ({ children }) => {
-  const [filter, setFilter] = useState(["Sass"]);
+  const [filter, setFilter] = useState([]);
 
   function updateFilter(skill) {
     setFilter([...filter, skill]);

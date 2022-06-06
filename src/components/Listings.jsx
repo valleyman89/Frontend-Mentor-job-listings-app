@@ -11,14 +11,15 @@ const Listings = () => {
     <>
       {listings
         .filter((listingSkill) => {
-          const newArray = [
+          const combinedSkills = [
             ...listingSkill.tools,
             ...listingSkill.languages,
             listingSkill.level,
             listingSkill.role,
           ];
-
-          return !newArray.every((result, i) => result !== filter[i]);
+          return filter.every((filterSelection) =>
+            combinedSkills.includes(filterSelection)
+          );
         })
         .map((filteredListing) => (
           <Listing key={filteredListing.id} data={filteredListing} />
