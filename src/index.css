@@ -58,6 +58,10 @@ main {
   box-shadow: 0px 20px 37px 0px rgba(0, 0, 0, 0.1);
 }
 
+.white {
+  color: white;
+}
+
 /* Filter */
 .filter {
   background-color: white;
@@ -134,6 +138,7 @@ main {
 @media screen and (min-width: 1000px) {
   .listing {
     flex-direction: row;
+    /* TODO: final to solve */
     /* justify-content: space-between; */
     align-items: center;
   }
@@ -221,10 +226,8 @@ main {
 
 .featured {
   background-color: black;
-  color: white;
 }
 
 .fresh {
   background-color: var(--color-primary);
-  color: white;
 }
