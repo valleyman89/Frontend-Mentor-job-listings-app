@@ -7,7 +7,7 @@ const FilterResult = () => {
     <div className="filter shadow">
       {filter.map((skillName, index) => {
         return (
-          <div key={index} className="tablet">
+          <div key={index} className="tablet bold">
             <div className="skill-name">{skillName}</div>
             <div
               className="kill-skill pointer"

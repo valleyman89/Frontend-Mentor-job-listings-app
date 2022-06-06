@@ -6,7 +6,7 @@ const FilterButton = ({ skill }) => {
 
   return (
     <button
-      className="skill pointer"
+      className="skill bold pointer"
       onClick={() => {
         updateFilter(skill);
       }}

@@ -6,14 +6,16 @@ const Listing = ({ data }) => {
   return (
     <div className="listing shadow">
       <div className="logo">
-        <img src={data.logo} alt={data.company + " logo"} />
+        <img src={data.logo} alt={data.company + " logo "} />
       </div>
-      <div className="name">
-        {data.company} <Badge fresh={data.new} featured={data.featured} />
-      </div>
-      <div className="role"> {data.position}</div>
       <div className="details">
-        {data.postedAt} • {data.contract} • {data.location}
+        <p className="company bold">
+          {data.company} <Badge fresh={data.new} featured={data.featured} />
+        </p>
+        <p className="position bold">{data.position}</p>
+        <p className="extras">
+          {data.postedAt} • {data.contract} • {data.location}
+        </p>
       </div>
       <div className="skills">
         {data.tools.map((tool, index) => (
