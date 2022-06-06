@@ -79,6 +79,7 @@ main {
   color: var(--color-dark-grey-cyan);
   margin-right: 2rem;
   text-transform: capitalize;
+  margin-left: auto;
 }
 
 .clear:hover {
@@ -138,8 +139,6 @@ main {
 @media screen and (min-width: 1000px) {
   .listing {
     flex-direction: row;
-    /* TODO: final to solve */
-    /* justify-content: space-between; */
     align-items: center;
   }
 }
@@ -209,6 +208,9 @@ main {
   }
   .details {
     margin-left: 4rem;
+  }
+  .skills {
+    margin-left: auto;
   }
 }
 
