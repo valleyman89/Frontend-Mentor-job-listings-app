@@ -19,7 +19,7 @@ const FilterResult = () => {
               >
                 <img
                   aria-label="remove"
-                  src="../images/icon-remove.svg"
+                  src="../public/images/icon-remove.svg"
                   alt={"remove " + skillName}
                 />
               </button>
