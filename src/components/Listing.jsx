@@ -4,7 +4,9 @@ import FilterButton from "./FilterButton";
 
 const Listing = ({ data }) => {
   return (
-    <div className="listing shadow">
+    <div
+      className={data.featured ? "listing shadow highlight" : "listing shadow"}
+    >
       <div className="logo">
         <img src={data.logo} alt={data.company + " logo "} />
       </div>
