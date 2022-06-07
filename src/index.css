@@ -25,13 +25,14 @@ body {
   background-repeat: repeat-x;
   background-size: auto;
   font-family: "League Spartan", sans-serif;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   font-weight: 500;
 }
 
 @media screen and (min-width: 1000px) {
   body {
     background-image: url(../public/images/bg-header-desktop.svg);
+    font-size: 1.5rem;
   }
 }
 
@@ -157,9 +158,6 @@ main {
   width: 5rem;
 }
 
-.details {
-  font-size: 1.7rem;
-}
 .company {
   color: var(--color-primary);
 }
