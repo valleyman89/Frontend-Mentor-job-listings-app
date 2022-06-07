@@ -8,7 +8,7 @@ const Listing = ({ data }) => {
       className={data.featured ? "listing shadow highlight" : "listing shadow"}
     >
       <div className="logo">
-        <img src={data.logo} alt={data.company + " logo "} />
+        <img src={data.logo} alt={data.company + " logo"} />
       </div>
       <div className="details">
         <p className="company bold">
